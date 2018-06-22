@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: TeamPSBOX
 subtitle:
 description:
 keywords:
@@ -78,4 +78,7 @@ theme: teampsbox
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/teampsbox/teampsbox.github.io.git
+  branch: master
+  message: Removed git remote
