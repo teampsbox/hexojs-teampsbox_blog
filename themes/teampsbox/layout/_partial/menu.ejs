@@ -11,15 +11,15 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="navbar-nav ml-auto my-auto">
+            <ul class="navbar-nav ml-auto">
                 <% for (var i in theme.menu){ %>
                     <li class="nav-item">
                         <a class="nav-link" href="<%- theme.menu[i].url ? url_for(theme.menu[i].url) : url_for(theme.menu[i]) %>">
-                            
+                            <%= i %>
                         </a>
                     </li>
-                <% } %>
-            </ul>
+                <% } %>                
+            </ul>            
         </div>
         <!-- /.navbar-collapse -->
     </div>
